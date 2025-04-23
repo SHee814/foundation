@@ -35,6 +35,12 @@
         }
     },
     "rules": {
+        "padding-line-between-statements": [
+            "warn",
+            { "blankLine": "always", "prev": "function", "next": "*" },
+            { "blankLine": "always", "prev": "import", "next": "*" },
+            { "blankLine": "always", "prev": "*", "next": "return" }
+        ],
         "react/react-in-jsx-scope": "off",
         "react/prop-types": "off",
         "react/function-component-definition": [
