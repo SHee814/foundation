@@ -64,8 +64,43 @@
                         "position": "before"
                     },
                     {
-                        "pattern": "@/**",
+                        "pattern": "**",
+                        "group": "external",
+                        "position": "after"
+                    },
+                    {
+                        "pattern": "pages/**",
                         "group": "internal",
+                        "position": "after"
+                    },
+                    {
+                        "pattern": "stores/**",
+                        "group": "internal",
+                        "position": "after"
+                    },
+                    {
+                        "pattern": "components/**",
+                        "group": "internal",
+                        "position": "after"
+                    },
+                    {
+                        "pattern": "./**/*.ts",
+                        "group": "sibling",
+                        "position": "after"
+                    },
+                    {
+                        "pattern": "./**/*.css",
+                        "group": "sibling",
+                        "position": "after"
+                    },
+                    {
+                        "pattern": "types/**",
+                        "group": "type",
+                        "position": "after"
+                    },
+                    {
+                        "pattern": "**/*",
+                        "group": "unknown",
                         "position": "after"
                     }
                 ],
